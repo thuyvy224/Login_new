@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="stylesheet" href="main.js"> -->
+</head>
+
+<body>
+  <!-- <header>
+  <div class="logo">
+    <img
+      src="data:image/png;base64,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"
+      alt="Logo" width="40px" height="40px">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header> -->
+
+  <body>
+    <div class="Right_side">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+      </div>
+      <div class="login-box">
+
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+
+
+          <br><br>
+
+          <div class="remember-me--forget-password">
+            <!-- Angular -->
+            <label>
+              <input type="checkbox" name="item" checked />
+              <span class="text-checkbox">Remember me</span>
+            </label>
+            <p>Forget password?</p>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
+      <h3> CTV Team 4 © 2023 </h3>
+    </div>
+  </body>
+
+</html>
